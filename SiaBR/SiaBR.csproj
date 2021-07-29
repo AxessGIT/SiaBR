@@ -42,11 +42,18 @@
     <Reference Include="Npgsql, Version=5.0.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.5.0.7\lib\netstandard2.0\Npgsql.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.Core.WinForms, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.DataSource.WinForms, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.GridCommon.WinForms, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SfInput.WinForms, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.SfListView.WinForms, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.Shared.Base, Version=19.1460.0.63, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
     </Reference>
@@ -83,6 +90,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrendatarios\ArrendatariosAltasCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrendatarios\ArrendatariosAltasCambios.Designer.cs">
+      <DependentUpon>ArrendatariosAltasCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arrendatarios\ArrendatariosBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrendatarios\ArrendatariosBuscar.Designer.cs">
+      <DependentUpon>ArrendatariosBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arrendatarios\ArrendatariosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arrendatarios\ArrendatariosListado.Designer.cs">
+      <DependentUpon>ArrendatariosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\ConexionDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\ConexionDatos.Designer.cs">
+      <DependentUpon>ConexionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\ConfiguracionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\ConfiguracionMenu.Designer.cs">
+      <DependentUpon>ConfiguracionMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\DescripcionesAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\DescripcionesAC.Designer.cs">
+      <DependentUpon>DescripcionesAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\DescripcionesListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\DescripcionesListado.Designer.cs">
+      <DependentUpon>DescripcionesListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\EmpresasListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\EmpresasListado.Designer.cs">
+      <DependentUpon>EmpresasListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\UsuariosAltasCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\UsuariosAltasCambios.Designer.cs">
+      <DependentUpon>UsuariosAltasCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion\UsuariosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion\UsuariosListado.Designer.cs">
+      <DependentUpon>UsuariosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos\ContratosAltasCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contratos\ContratosAltasCambios.Designer.cs">
+      <DependentUpon>ContratosAltasCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contratos\ContratosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contratos\ContratosListado.Designer.cs">
+      <DependentUpon>ContratosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FacturacionMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FacturacionMenu.Designer.cs">
+      <DependentUpon>FacturacionMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FacturasGenerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FacturasGenerar.Designer.cs">
+      <DependentUpon>FacturasGenerar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Facturacion\FacturasListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Facturacion\FacturasListado.Designer.cs">
+      <DependentUpon>FacturasListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Queries.cs" />
+    <Compile Include="Helpers\Utilerias.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,9 +195,148 @@
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicio.cs" />
+    <Compile Include="Modelo\Arrendatario.cs" />
+    <Compile Include="Modelo\Contrato.cs" />
+    <Compile Include="Modelo\ContratoDatos.cs" />
+    <Compile Include="Modelo\ContratoUltimoDatos.cs" />
+    <Compile Include="Modelo\DatosConexion.cs" />
+    <Compile Include="Modelo\DescripcionCat.cs" />
+    <Compile Include="Modelo\DocumentoTipo.cs" />
+    <Compile Include="Modelo\Empresa.cs" />
+    <Compile Include="Modelo\FacturasDatos.cs" />
+    <Compile Include="Modelo\Fol.cs" />
+    <Compile Include="Modelo\PagosDatos.cs" />
+    <Compile Include="Modelo\Propiedad.cs" />
+    <Compile Include="Modelo\PropiedadDatos.cs" />
+    <Compile Include="Modelo\PropiedadDocumento.cs" />
+    <Compile Include="Modelo\PropiedadPermiso.cs" />
+    <Compile Include="Modelo\PropiedadPlano.cs" />
+    <Compile Include="Modelo\PropiedadRecibo.cs" />
+    <Compile Include="Modelo\Propietario.cs" />
+    <Compile Include="Modelo\Usr.cs" />
+    <Compile Include="Pagos\PagosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\PagosListado.Designer.cs">
+      <DependentUpon>PagosListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Polizas\PolizasGenerar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Polizas\PolizasGenerar.Designer.cs">
+      <DependentUpon>PolizasGenerar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Propiedades\PropiedadesAltasCambios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesAltasCambios.Designer.cs">
+      <DependentUpon>PropiedadesAltasCambios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesBuscar.Designer.cs">
+      <DependentUpon>PropiedadesBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesDocumentosAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesDocumentosAC.Designer.cs">
+      <DependentUpon>PropiedadesDocumentosAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesListado.Designer.cs">
+      <DependentUpon>PropiedadesListado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPermisosAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPermisosAC.Designer.cs">
+      <DependentUpon>PropiedadesPermisosAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPlanosAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPlanosAC.Designer.cs">
+      <DependentUpon>PropiedadesPlanosAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPropietariosAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropiedadesPropietariosAC.Designer.cs">
+      <DependentUpon>PropiedadesPropietariosAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropietariosAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropietariosAC.Designer.cs">
+      <DependentUpon>PropietariosAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Propiedades\PropietariosListado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Propiedades\PropietariosListado.Designer.cs">
+      <DependentUpon>PropietariosListado.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Arrendatarios\ArrendatariosAltasCambios.resx">
+      <DependentUpon>ArrendatariosAltasCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arrendatarios\ArrendatariosBuscar.resx">
+      <DependentUpon>ArrendatariosBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arrendatarios\ArrendatariosListado.resx">
+      <DependentUpon>ArrendatariosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\ConexionDatos.resx">
+      <DependentUpon>ConexionDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\ConfiguracionMenu.resx">
+      <DependentUpon>ConfiguracionMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\DescripcionesAC.resx">
+      <DependentUpon>DescripcionesAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\DescripcionesListado.resx">
+      <DependentUpon>DescripcionesListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\EmpresasListado.resx">
+      <DependentUpon>EmpresasListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\UsuariosAltasCambios.resx">
+      <DependentUpon>UsuariosAltasCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\UsuariosListado.resx">
+      <DependentUpon>UsuariosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contratos\ContratosAltasCambios.resx">
+      <DependentUpon>ContratosAltasCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contratos\ContratosListado.resx">
+      <DependentUpon>ContratosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FacturacionMenu.resx">
+      <DependentUpon>FacturacionMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FacturasGenerar.resx">
+      <DependentUpon>FacturasGenerar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Facturacion\FacturasListado.resx">
+      <DependentUpon>FacturasListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\PagosListado.resx">
+      <DependentUpon>PagosListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Polizas\PolizasGenerar.resx">
+      <DependentUpon>PolizasGenerar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -102,7 +346,35 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Propiedades\PropiedadesAltasCambios.resx">
+      <DependentUpon>PropiedadesAltasCambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesBuscar.resx">
+      <DependentUpon>PropiedadesBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesDocumentosAC.resx">
+      <DependentUpon>PropiedadesDocumentosAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesListado.resx">
+      <DependentUpon>PropiedadesListado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesPermisosAC.resx">
+      <DependentUpon>PropiedadesPermisosAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesPlanosAC.resx">
+      <DependentUpon>PropiedadesPlanosAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropiedadesPropietariosAC.resx">
+      <DependentUpon>PropiedadesPropietariosAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropietariosAC.resx">
+      <DependentUpon>PropietariosAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Propiedades\PropietariosListado.resx">
+      <DependentUpon>PropietariosListado.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Imagenes\Cuartos.ai" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -141,12 +413,14 @@
     <Content Include="Imagenes\Celda.ico" />
     <Content Include="Imagenes\Celdas32.png" />
     <Content Include="Imagenes\Ciudad.ico" />
+    <None Include="Imagenes\Ciudad32.png" />
     <Content Include="Imagenes\ComputerCheck32.png" />
     <Content Include="Imagenes\Configurar.ico" />
     <Content Include="Imagenes\Configurar32.png" />
     <Content Include="Imagenes\Cuartos.ico" />
     <Content Include="Imagenes\Cuartos32.png" />
     <Content Include="Imagenes\Delete32.png" />
+    <None Include="Imagenes\Desarrollo32.png" />
     <Content Include="Imagenes\Doctores.ico" />
     <Content Include="Imagenes\Doctores32.png" />
     <Content Include="Imagenes\Editar20.png" />
@@ -157,9 +431,11 @@
     <Content Include="Imagenes\Empresas32.png" />
     <Content Include="Imagenes\Equipos.ico" />
     <Content Include="Imagenes\Equipos32.png" />
+    <None Include="Imagenes\estado32.png" />
     <Content Include="Imagenes\Filtro.ico" />
     <Content Include="Imagenes\Filtro32.png" />
     <Content Include="Imagenes\foto.jpg" />
+    <None Include="Imagenes\generar32a.png" />
     <Content Include="Imagenes\Guardar32.png" />
     <Content Include="Imagenes\login.ico" />
     <Content Include="Imagenes\msp.png" />
@@ -180,6 +456,9 @@
     <Content Include="Imagenes\view24.png" />
     <Content Include="Imagenes\xml.ico" />
     <Content Include="Imagenes\Xml32.png" />
+    <None Include="Resources\Borrar32.png" />
+    <None Include="Resources\Editar20.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
